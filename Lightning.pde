@@ -12,7 +12,7 @@ int lightReset = 0;
 void setup()
 {
 	size(800,500);
-	strokeWeight(1);
+	strokeWeight(1.25);
 	background(0,0,0);
 	img = loadImage("Instinct.png");
 }
@@ -20,7 +20,7 @@ void setup()
 void draw()
 {
 	lightReset = lightReset + 1;
-	if (lightReset > 15)
+	if (lightReset > 10)
 	{
 		background(0, 0, 0);
 		colRed = (int)(Math.random()*255);
@@ -35,7 +35,7 @@ void draw()
 		startX = endX;
 		startY = endY;
 	}
-	image (img, 190, 50,2071/5,1915/5);
+	image (img, 190, 20,2071/5,1915/5);
 	startX = 0;
 	startY = 250;
 	endX = 0;
@@ -57,12 +57,21 @@ void draw()
 		startX = endX;
 		startY = endY;
 	}
-	image (img, 190, 50,2071/5,1915/5);
+	image (img, 190, 20,2071/5,1915/5);
 	startX = 0;
 	startY = 250;
 	endX = 0;
 	endY = 250;
 	}	
+	message();
+}
+
+void message()
+{
+	fill(255,255,255);
+	textAlign(CENTER);
+	textSize(90);
+	text("Team Instict",400,485);
 }
 
 //void mousePressed()
