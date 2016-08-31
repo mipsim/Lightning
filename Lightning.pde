@@ -13,8 +13,8 @@ void setup()
 {
 	size(800,500);
 	strokeWeight(1);
-	background(255,255,255);
-	img = loadImage("pikachu.png");
+	background(0,0,0);
+	img = loadImage("Instinct.png");
 }
 
 void draw()
@@ -22,7 +22,7 @@ void draw()
 	lightReset = lightReset + 1;
 	if (lightReset > 15)
 	{
-		background(255, 255, 255);
+		background(0, 0, 0);
 		colRed = (int)(Math.random()*255);
 	colGreen = (int)(Math.random()*255);
 	colBlue = (int)(Math.random()*255);
@@ -35,7 +35,7 @@ void draw()
 		startX = endX;
 		startY = endY;
 	}
-	image (img, 20, 200, 3532/6, 1866/6);
+	image (img, 190, 50,2071/5,1915/5);
 	startX = 0;
 	startY = 250;
 	endX = 0;
@@ -57,7 +57,7 @@ void draw()
 		startX = endX;
 		startY = endY;
 	}
-	image (img, 20, 200, 3532/6, 1866/6);
+	image (img, 190, 50,2071/5,1915/5);
 	startX = 0;
 	startY = 250;
 	endX = 0;
