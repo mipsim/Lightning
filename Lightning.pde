@@ -1,9 +1,9 @@
 PImage img;
 
 int startX = 0;
-int startY = 250;
+int startY = 275;
 int endX = 0;
-int endY = 250;
+int endY = 275;
 int colRed = (int)(Math.random()*255);
 int colGreen = (int)(Math.random()*255);
 int colBlue = (int)(Math.random()*255);
@@ -11,7 +11,7 @@ int lightReset = 0;
 
 void setup()
 {
-	size(800,500);
+	size(800,550);
 	strokeWeight(1.25);
 	background(0,0,0);
 	img = loadImage("Instinct.png");
@@ -27,8 +27,8 @@ void message()
 {
 	fill(255,255,255);
 	textAlign(CENTER);
-	textSize(90);
-	text("INSTINCT",400,485);
+	textSize(140);
+	text("INSTINCT",400,530);
 }
 
 void lightning()
@@ -49,11 +49,11 @@ void lightning()
 			startX = endX;
 			startY = endY;
 		}
-		image (img, 190, 20,2071/5,1915/5);
+		image (img, 190, 30,2071/5,1915/5);
 		startX = 0;
-		startY = 250;
+		startY = 275;
 		endX = 0;
-		endY = 250;
+		endY = 275;
 		lightReset = 0;
 	}
 	//Clears lightning on screen
@@ -71,10 +71,10 @@ void lightning()
 			startX = endX;
 			startY = endY;
 		}
-		image (img, 190, 20,2071/5,1915/5);
+		image (img, 190, 30,2071/5,1915/5);
 		startX = 0;
-		startY = 250;
+		startY = 275;
 		endX = 0;
-		endY = 250;
+		endY = 275;
 	}	
 }
