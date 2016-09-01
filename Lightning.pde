@@ -28,7 +28,7 @@ void message()
 	fill(255,255,255);
 	textAlign(CENTER);
 	textSize(90);
-	text("Team Instict",400,485);
+	text("INSTINCT",400,485);
 }
 
 void lightning()
